@@ -1,0 +1,97 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail at home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cocktail at home</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/recettes">Recettes</a></li>
+                <li><a href="/contact">Contact</a></li>
+                {% if not current_user.is_authenticated %}
+                    <li><a href="/login">Connexion</a></li>
+                {% else %}
+                    <li><a href="/logout">Déconnexion</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        {% if not current_user.is_authenticated %}
+            <section class="login-section">
+                <h2>Connexion</h2>
+                <form action="" method="post">
+                    <label for="username">Nom d'utilisateur:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Se connecter</button>
+                </form>
+            </section>
+        {% endif %}
+    </header>
+
+    <main>
+        <h2>Recettes de Cocktails</h2>
+        <p>Découvrez nos délicieuses recettes de cocktails à préparer chez vous !</p>
+     
+        <section class="photos">
+            <div class="photo">
+                <img src="images/photo1.png" alt="Cocktail 1">
+                <p>Nom du cocktail 1</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo2.png" alt="Cocktail 2">
+                <p>Nom du cocktail 2</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo1.png" alt="Cocktail 1">
+                <p>Nom du cocktail 1</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo2.png" alt="Cocktail 2">
+                <p>Nom du cocktail 2</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo1.png" alt="Cocktail 1">
+                <p>Nom du cocktail 1</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo2.png" alt="Cocktail 2">
+                <p>Nom du cocktail 2</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo1.png" alt="Cocktail 1">
+                <p>Nom du cocktail 1</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo2.png" alt="Cocktail 2">
+                <p>Nom du cocktail 2</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo1.png" alt="Cocktail 1">
+                <p>Nom du cocktail 1</p>
+            </div>
+            <div class="photo">
+                <img src="images/photo2.png" alt="Cocktail 2">
+                <p>Nom du cocktail 2</p>
+            </div>
+            
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Cocktail at home. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
