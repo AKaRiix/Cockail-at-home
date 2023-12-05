@@ -18,6 +18,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-direction: column;
+    text-align: center;
 }
 
 nav li {
@@ -53,9 +55,11 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
+    flex-direction: column;
 }
 
 .photo {
+    width: 100%;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -64,9 +68,22 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    width: 100%;
+    max-width: none;
 }
 /* ... (Styles existants) */
 
+.login-section,
+    .user-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .login-section form,
+    .user-section p,
+    .user-section a {
+        margin-top: 10px;
+    }
 .login-section {
     float:right;
     margin-top: 10px;
@@ -155,7 +172,7 @@ h2 {
 .social{
     position: static;
     margin-left: 80%;
-    margin-top:-10px;
+    margin-top: 10px;
     background-color: transparent;
     transition: transform .5s; /* Animation */
 
