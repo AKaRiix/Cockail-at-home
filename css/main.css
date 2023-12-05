@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-bottom: 5%;
     background-color: #000;
     color: #fff;
 }
@@ -12,6 +13,8 @@ header {
     color: #000;
     padding: 10px;
     text-align: center;
+
+
 }
 
 nav ul {
@@ -43,8 +46,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 20px; /* Ajoute ou ajuste cette marge en fonction de ton design */
 }
-/* ... (Styles existants) */
 
 main {
     padding: 20px;
@@ -68,10 +71,9 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    width: 100%;
+    width: 50%;
     max-width: none;
 }
-/* ... (Styles existants) */
 
 .login-section,
     .user-section {
@@ -92,6 +94,9 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    max-width: 100%;
+
 }
 
 .login-section h2 {
@@ -118,20 +123,18 @@ input {
 button {
     background-color: #d4af37;
     color: #fff;
-    padding: 12px;
+    /* padding: 12px; */
+    margin-left: 10%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    flex-direction: column;
+    display: block;
 }
 
 button:hover {
     background-color: #b19227;
 }
-
-/* ... (Styles existants) */
-/* main.css */
-
-/* ... (Styles existants) */
 
 main {
     padding: 20px;
@@ -140,13 +143,6 @@ main {
 h2 {
     color: #d4af37;
 }
-
-/* ... (Styles spécifiques aux recettes) */
-/* main.css */
-
-/* main.css */
-
-/* ... (Styles existants) */
 
 .google-review {
     margin-top: 40px;
@@ -166,7 +162,6 @@ h2 {
     background-color: #b19227;
 }
 
-/* ... (Styles existants) */
 
 .social{
     position: static;
