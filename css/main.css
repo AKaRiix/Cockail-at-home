@@ -5,6 +5,8 @@ body {
     box-sizing: border-box;
     margin-bottom: 5%;
     background-color: #000;
+    background-image:url(../templates/images/photo4.png) ;
+    background-size: cover;
     color: #fff;
 }
 
@@ -16,7 +18,7 @@ header {
 
 
 }
-
+/*Bar du header*/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -26,7 +28,7 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    display: inline-block; /* Modification ici */
     margin-right: 20px;
 }
 
@@ -34,6 +36,12 @@ nav a {
     text-decoration: none;
     color: #000;
 }
+
+nav ul li a:hover {
+    text-decoration: underline; /* Ajout du soulignement */
+    transition: text-decoration 0.3s ease; /* Ajout de la transition pour l'effet fluide */
+}
+
 
 main {
     padding: 20px;
@@ -191,4 +199,8 @@ h2 {
     background-color: transparent;
     border-color: transparent;
 }
-
+/* Définir une taille spécifique pour le bloc de message */
+.form message{
+    height: 200px; /* Tu peux ajuster cette valeur selon la taille que tu souhaites */
+    overflow: auto; /* Ajoute une barre de défilement si le contenu dépasse la hauteur spécifiée */
+}
