@@ -47,16 +47,6 @@ main {
     padding: 20px;
 }
 
-footer {
-    background-color: #d4af37;
-    color: #000;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-top: 20px; /* Ajoute ou ajuste cette marge en fonction de ton design */
-}
-
 main {
     padding: 20px;
 }
@@ -203,4 +193,61 @@ h2 {
 .form message{
     height: 200px; /* Tu peux ajuster cette valeur selon la taille que tu souhaites */
     overflow: auto; /* Ajoute une barre de défilement si le contenu dépasse la hauteur spécifiée */
+}
+
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f400; /* Couleur de fond du conteneur */
+}
+
+.image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px; /* Ajuste la largeur maximale selon tes besoins */
+    height: auto;
+}
+
+.text {
+    flex: 1;
+}
+
+/* Pour inverser l'ordre image/text dans une section spécifique */
+.image-text-container reversed {
+    flex-direction: row-reverse;
+}
+
+/* Ajoute du style supplémentaire selon tes préférences */
+.text h2 {
+    color: #d4af37; /* Couleur du titre */
+}
+
+.text p {
+    color: #e2e2e2; /* Couleur du texte */
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #d4af37;
+    color: #000;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Ajoute ou ajuste cette marge en fonction de ton design */
 }
